@@ -1,0 +1,376 @@
+<?xml version="1.0" ?>
+<robot name="FNL" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find FNL_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find FNL_description)/urdf/FNL.trans" />
+<xacro:include filename="$(find FNL_description)/urdf/FNL.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.1457705043934358 0.23407871850318224 0.1327563273134616" rpy="0 0 0"/>
+    <mass value="1.04154618042607"/>
+    <inertia ixx="0.001545" iyy="0.002498" izz="0.003072" ixy="0.0" iyz="5e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="biru"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BetKananDep__2__Mirror___2__Mirror__1">
+  <inertial>
+    <origin xyz="0.019662332810923874 -0.007068182880435092 -0.03574463042369655" rpy="0 0 0"/>
+    <mass value="0.32297068673829615"/>
+    <inertia ixx="0.000414" iyy="0.000416" izz="6.2e-05" ixy="-5e-06" iyz="3.2e-05" ixz="4.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.061011 -0.36949 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___2__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.061011 -0.36949 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___2__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DengKananDep__1___2__Mirror___3__Mirror__1">
+  <inertial>
+    <origin xyz="0.03578955401550969 0.00998806492381421 0.011762536830899034" rpy="0 0 0"/>
+    <mass value="0.12464330596100792"/>
+    <inertia ixx="5.2e-05" iyy="6.5e-05" izz="0.000101" ixy="1.1e-05" iyz="-1.1e-05" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.088496 -0.321883 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___3__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.088496 -0.321883 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___3__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BetKananDep__2__Mirror___2__1">
+  <inertial>
+    <origin xyz="-0.019661740601800537 -0.007068182880435425 -0.03574463042369655" rpy="0 0 0"/>
+    <mass value="0.32297068673829604"/>
+    <inertia ixx="0.000414" iyy="0.000416" izz="6.2e-05" ixy="5e-06" iyz="3.2e-05" ixz="-4.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.230512 -0.36949 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.230512 -0.36949 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DengKananDep__1___2__Mirror___3__1">
+  <inertial>
+    <origin xyz="-0.0357901578439572 0.009988002317730449 0.011762576621350829" rpy="0 0 0"/>
+    <mass value="0.12464356794067415"/>
+    <inertia ixx="5.2e-05" iyy="6.5e-05" izz="0.000101" ixy="-1.1e-05" iyz="-1.1e-05" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.203026 -0.321883 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.203026 -0.321883 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BetKananDep__2__1">
+  <inertial>
+    <origin xyz="-0.01966141439180069 0.007068122720855746 -0.03574463042369666" rpy="0 0 0"/>
+    <mass value="0.32297068673829615"/>
+    <inertia ixx="0.000414" iyy="0.000416" izz="6.2e-05" ixy="-5e-06" iyz="-3.2e-05" ixz="-4.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.230533 -0.099063 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.230533 -0.099063 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DengKananDep__1___2__1">
+  <inertial>
+    <origin xyz="-0.0357896355963864 -0.009988125083393917 0.01176253683089895" rpy="0 0 0"/>
+    <mass value="0.12464330596100792"/>
+    <inertia ixx="5.2e-05" iyy="6.5e-05" izz="0.000101" ixy="1.1e-05" iyz="1.1e-05" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.203047 -0.14667 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.203047 -0.14667 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BetKananDep__2__Mirror___3__1">
+  <inertial>
+    <origin xyz="0.019662332810923944 0.007068122720855802 -0.03574463042369655" rpy="0 0 0"/>
+    <mass value="0.32297068673829604"/>
+    <inertia ixx="0.000414" iyy="0.000416" izz="6.2e-05" ixy="5e-06" iyz="-3.2e-05" ixz="4.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.061011 -0.099063 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.061011 -0.099063 -0.162069" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/BetKananDep__2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DengKananDep__1___2__Mirror___4__1">
+  <inertial>
+    <origin xyz="0.03578975005308061 -0.009988062477309934 0.011762576621350856" rpy="0 0 0"/>
+    <mass value="0.12464356794067415"/>
+    <inertia ixx="5.2e-05" iyy="6.5e-05" izz="0.000101" ixy="-1.1e-05" iyz="1.1e-05" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.088496 -0.14667 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.088496 -0.14667 -0.14206" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/DengKananDep__1___2__Mirror___4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PahaKananDep__2___1___2__Mirror___3__1">
+  <inertial>
+    <origin xyz="0.015711880882158746 -0.025947437205217416 0.03183619171533866" rpy="0 0 0"/>
+    <mass value="0.17119708420148605"/>
+    <inertia ixx="0.000147" iyy="0.00012" izz="8.1e-05" ixy="1.6e-05" iyz="5e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.091514 -0.19867 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.091514 -0.19867 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PahaKananDep__2___1___2__1">
+  <inertial>
+    <origin xyz="-0.015711948638386874 -0.025947440718973674 0.03183619079245026" rpy="0 0 0"/>
+    <mass value="0.1711970761285021"/>
+    <inertia ixx="0.000147" iyy="0.00012" izz="8.1e-05" ixy="-1.6e-05" iyz="5e-06" ixz="3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.200029 -0.19867 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.200029 -0.19867 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PahaKananDep__2___1___2__Mirror___2__Mirror__1">
+  <inertial>
+    <origin xyz="0.015711867057510154 0.025948380559393913 0.031836190792450314" rpy="0 0 0"/>
+    <mass value="0.1711970761285021"/>
+    <inertia ixx="0.000147" iyy="0.00012" izz="8.1e-05" ixy="-1.6e-05" iyz="-5e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.091514 -0.269882 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___2__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.091514 -0.269882 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___2__Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="PahaKananDep__2___1___2__Mirror___2__1">
+  <inertial>
+    <origin xyz="-0.015712288673035424 0.025948377045637794 0.03183619171533866" rpy="0 0 0"/>
+    <mass value="0.17119708420148605"/>
+    <inertia ixx="0.000147" iyy="0.00012" izz="8.1e-05" ixy="1.6e-05" iyz="-5e-06" ixz="3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.200008 -0.269882 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.200008 -0.269882 -0.10316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find FNL_description)/meshes/PahaKananDep__2___1___2__Mirror___2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="revolute">
+  <origin xyz="0.027485 0.047607 0.020009" rpy="0 0 0"/>
+  <parent link="DengKananDep__1___2__Mirror___3__Mirror__1"/>
+  <child link="BetKananDep__2__Mirror___2__Mirror__1"/>
+  <axis xyz="0.866025 -0.5 -0.0"/>
+  <limit upper="3.926991" lower="-0.436332" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="0.003018 0.052001 0.0389" rpy="0 0 0"/>
+  <parent link="PahaKananDep__2___1___2__Mirror___2__Mirror__1"/>
+  <child link="DengKananDep__1___2__Mirror___3__Mirror__1"/>
+  <axis xyz="0.866025 -0.5 -0.0"/>
+  <limit upper="1.48353" lower="-1.396263" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="-0.027486 0.047607 0.020009" rpy="0 0 0"/>
+  <parent link="DengKananDep__1___2__Mirror___3__1"/>
+  <child link="BetKananDep__2__Mirror___2__1"/>
+  <axis xyz="0.866025 0.5 0.0"/>
+  <limit upper="3.926991" lower="-0.436332" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 4" type="revolute">
+  <origin xyz="-0.003018 0.052001 0.0389" rpy="0 0 0"/>
+  <parent link="PahaKananDep__2___1___2__Mirror___2__1"/>
+  <child link="DengKananDep__1___2__Mirror___3__1"/>
+  <axis xyz="0.866025 0.5 -0.0"/>
+  <limit upper="1.48353" lower="-1.396263" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="-0.027486 -0.047607 0.020009" rpy="0 0 0"/>
+  <parent link="DengKananDep__1___2__1"/>
+  <child link="BetKananDep__2__1"/>
+  <axis xyz="-0.866025 0.5 0.0"/>
+  <limit upper="3.926991" lower="-0.436332" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 6" type="revolute">
+  <origin xyz="-0.003018 -0.052 0.0389" rpy="0 0 0"/>
+  <parent link="PahaKananDep__2___1___2__1"/>
+  <child link="DengKananDep__1___2__1"/>
+  <axis xyz="0.866025 -0.5 -0.0"/>
+  <limit upper="1.396263" lower="-1.48353" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 7" type="revolute">
+  <origin xyz="0.027485 -0.047607 0.020009" rpy="0 0 0"/>
+  <parent link="DengKananDep__1___2__Mirror___4__1"/>
+  <child link="BetKananDep__2__Mirror___3__1"/>
+  <axis xyz="-0.866025 -0.5 -0.0"/>
+  <limit upper="3.926991" lower="-0.436332" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 8" type="revolute">
+  <origin xyz="0.003018 -0.052 0.0389" rpy="0 0 0"/>
+  <parent link="PahaKananDep__2___1___2__Mirror___3__1"/>
+  <child link="DengKananDep__1___2__Mirror___4__1"/>
+  <axis xyz="-0.866025 -0.5 -0.0"/>
+  <limit upper="1.48353" lower="-1.396263" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 9" type="revolute">
+  <origin xyz="-0.091514 0.19867 0.10316" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="PahaKananDep__2___1___2__Mirror___3__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="1.134464" lower="-0.959931" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 11" type="revolute">
+  <origin xyz="-0.200029 0.19867 0.10316" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="PahaKananDep__2___1___2__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.959931" lower="-1.134464" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 12" type="revolute">
+  <origin xyz="-0.091514 0.269882 0.10316" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="PahaKananDep__2___1___2__Mirror___2__Mirror__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.959931" lower="-1.134464" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 13" type="revolute">
+  <origin xyz="-0.200008 0.269882 0.10316" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="PahaKananDep__2___1___2__Mirror___2__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="1.134464" lower="-0.959931" effort="100" velocity="100"/>
+</joint>
+
+</robot>
